@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+.item {
+	border:1px solid mediumorchid;
+	color: mediumorchid;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px 10px;
+	cursor: pointer; 
+}
+.item:hover {
+	background-color: mistyrose;
+	cursor: pointer; 
+}
+#work-mainseclect .item:hover {
+	background-color: mediumorchid;
+	color: white;
+	cursor: pointer; 
+}
+figure img {
+	width: 100%;
+	border-radius: 10px;
+}
+figcaption {
+	font-size: 18px;
+	line-height: 2em;
+}

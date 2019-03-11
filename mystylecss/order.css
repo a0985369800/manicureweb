@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+.pagebanner { /*banner背景圖片*/
+	background-image:url(../images/index/located2.jpg);
+}
+.bannerhead { /*banner標題字顏色*/
+	color: white;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.nav a {
+	color: #337ab7;
+}
+.nav a:hover {
+	color: darkmagenta;
+}
+.well h2 {
+	padding: 0 20px 10px 20px;
+	font-size: 20px;
+	font-weight: 400;
+}
+/*
+.form-control-wrapper {
+	margin: 10px 20px;
+}*/

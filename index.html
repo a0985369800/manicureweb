@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>美甲美睫系統</title>
+
+	<!-- Bootstrap3 -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--animate.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<!--google font-->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<!--fontawesome-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--全局css-->
+	<link href="mystylecss/all.css" rel="stylesheet" type="text/css">
+	<!--本頁css-->
+	<link href="mystylecss/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<nav class="navbar navbar-mistyrose navbar-fixed-top" role="navigation">
+		<div class="container"> 
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="美甲美睫"></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">首頁</a></li>
+					<li><a href="service.html">服務項目</a></li>
+					<li><a href="work.html">作品集</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="order.html" data-toggle="modal" data-target="#myModal">線上預約</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="carousel-example-generic" class="carousel slide mainmargintop" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="images/carousel/banner1.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner2.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner3.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner4.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner5.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner6.jpg" width="100%" alt="...">
+			</div>
+			<div class="item">
+				<img src="images/carousel/banner7.jpg" width="100%" alt="...">
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<main class="container-fluid mgt3">
+		<article id="row about-article1"><!--前言/座右銘，此區塊撈about頁面-->
+			<figure class="col-sm-4 col-sm-offset-2 wow fadeInLeft">
+				<img src="images/index/start.jpg" alt="..." class="img-thumbnail">
+			</figure>
+			<section class="col-sm-4 text-center wow fadeInRight" style="padding: 30px">
+				<p>妳是我最重要的人⋯<br/>
+				秉持著這個美好回憶，美甲女王在愛的<br/>
+				期待中創立了<br/>
+				<br/>
+				我在美甲女王<br/>
+				發現了自由的心靈<br/>
+				發現了自我的美麗<br/>
+				發現了夢寐以求的自由自在<br/>
+				發現了最貼心的服務<br/>
+				這就是美甲女王</p>
+			</section>
+			<div class="clearfix visible-sm-block"></div>
+		</article>
+		<article id="about-article2"><!--經營理念，此區塊撈about頁面-->
+			<div class="patternmg text-center">
+				<img src="images/pattern1.png" alt="">
+			</div>
+			<section class="serviceidea text-center wow fadeInUp">
+				<h2 class="h3">服務理念</h2>
+				<p>美甲女王有別於一般美甲美睫沙龍豪華氣派我們給的是簡潔舒適溫馨且<br/>
+				隱私性高的空間，以用心服務、追求創新、融合藝術與設計，多元化的美麗項目，<br/>
+				帶給你最專業的技術及服務品質。</p>
+				<div class="row text-center mgt2">
+					<div class="col-xs-2 col-xs-offset-3">
+						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span><br/>
+						<p>用心服務</p>
+					</div>
+					<div class="col-xs-2">
+						<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span><br/>
+						<p>追求創新</p>
+					</div>
+					<div class="col-xs-2">
+						<span class="glyphicon glyphicon-grain" aria-hidden="true"></span><br/>
+						<p>藝術融合</p>
+					</div>
+				</div>
+			</section>
+		</article>
+		<article id="service-article"><!--服務項目，此區塊撈service頁面-->
+			<div class="patternmg text-center">
+				<img src="images/pattern1.png" alt="">
+			</div>
+			<section class="serviceidea text-center wow fadeInUp">
+				<h2 class="h3 text-center">服務項目</h2>
+				<div class="row text-center mgt2">
+					<div class="col-sm-3 mgt1">
+						<a target="_blank" href="#">
+							<figcaption>
+								<img src="images/index/service1.jpg" alt="Paris" width="100%">
+								<figure>
+									手足保養
+								</figure>
+							</figcaption>
+						</a>
+					</div>
+					<div class="col-sm-3 mgt1">
+						<a target="_blank" href="#">
+							<figcaption>
+								<img src="images/index/service2.jpg" alt="Paris" width="100%">
+								<figure>
+									美甲彩繪
+								</figure>
+							</figcaption>
+						</a>
+					</div>
+					<div class="col-sm-3 mgt1">
+						<a target="_blank" href="#">
+							<figcaption>
+								<img src="images/index/service3.jpg" alt="Paris" width="100%">
+								<figure>
+									睫毛美學
+								</figure>
+							</figcaption>
+						</a>
+					</div>
+					<div class="col-sm-3 mgt1">
+						<a target="_blank" href="#">
+							<figcaption>
+								<img src="images/index/service4.jpg" alt="Paris" width="100%">
+								<figure>
+									整體造型
+								</figure>
+							</figcaption>
+						</a>
+					</div>
+				</div>
+			</section>
+		</article>
+		<article id="about-article3"><!--公司介紹，此區塊撈about頁面-->
+			<div class="patternmg text-center">
+				<img src="images/pattern1.png" alt="">
+			</div>
+			<section class="serviceidea text-center wow fadeInUp">
+				<h2 class="h3">美甲女王美甲美睫</h2>
+				<p>擁有頂尖的師資團隊，堅持創造屬於個人獨一無二的特質，每位老師皆有豐富的現場經驗，溫柔細膩的手足保養及睫毛美學、時尚藝術的美甲設計，可以幫您依照個人形象和喜好打造屬於自己的特色。讓您備受呵令人迷戀不已，每個女人都值得擁有更多一些，更多屬於自己的時間，潛入屬與自己的私密空間，您可放心把自己交給女王團隊，盛放出屬於您個人獨特的自信風采⋯。</p>
+				<div class="row text-center mgt2 located">
+					<div class="col-sm-6">
+						<img src="images/index/located1.jpg" alt="Paris" width="100%">
+					</div>
+					<div class="col-sm-6">
+						<img src="images/index/located2.jpg" alt="Paris" width="100%">
+					</div>
+				</div>
+			</section>
+		</article>
+		<article id="about-article4"><!--聯繫我們，此區塊撈about頁面-->
+			<div class="patternmg text-center">
+				<img src="images/pattern1.png" alt="">
+			</div>
+			<section class="serviceidea text-center wow fadeInUp">
+				<h2 class="h3">聯繫我們</h2>
+				<p>營業時間 : <span id="time">AM 10:00~PM 8:00</span><br/>
+					<span id="location">台北市中正區忠孝西路100號<br/>
+					（捷運善導寺站出口右轉直走，步行2-3分鐘）</span><br/>
+					預約電話:<span id="phone">02-1234-5678 ; 0912-345-678</span><br/>
+					預約信箱:<span id="email">service@jbqueen.tw</span>
+					Line@ID:<span id="line">@abcd</span><br/>
+					Instagram :<span id="ig">manicure</span><br/>
+					Facebook粉絲團：<span id="fb">https://www.facebook.com</span></p>
+					<a href="order.html" class="btn btn-primary">立即預約</a>
+				<div class="mgt3">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d978.6425992716069!2d121.51738902101623!3d25.04613031597654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a972414e4207%3A0xb28ff94c8f0f3462!2z5Y-w5YyX5aSp5oiQ5aSn6aOv5bqXIENvc21vcyBIb3RlbCBUYWlwZWk!5e0!3m2!1szh-TW!2stw!4v1550392459203" width="80%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</section>
+		</article>
+	</main>
+	
+	<footer class="mgt3 pdt3 pdb3">
+		<div class="container">
+			<div class="row">
+				<section class="col-sm-4 text-center">
+					<a href="index.html"><img src="images/logo.png" width="100px" alt=""></a>
+				</section>
+				<section class="col-sm-3 text-center">
+					<div class="socialicons">
+						<a href="https://www.facebook.com" target="_blank"><span class="mgr1"><i class="fab fa-facebook-square"></i></span></a>
+						<a href="https://www.instagram.com/" target="_blank"><span class="mgr1"><i class="fab fa-instagram"></i></span></a>
+						<a href="https://line.me/zh-hant/" target="_blank"><span class="mgr1"><i class="fab fa-line"></i></span></a>
+					</div>
+					<p>營業時間：AM 11:00 ~ PM 8:00</p>
+				</section>
+				<section class="col-sm-5 text-center mgt1">
+					<p>
+						<a href="service.html"><span class="mgr1">服務項目</span></a>
+						<a href="work.html"><span class="mgr1">作品集</span></a>
+						<a href="news.html"><span class="mgr1">最新消息</span></a>
+						<a href="about.html"><span class="mgr1">關於我們</span></a>
+						<a href="order.html"><span class="mgr1">線上預約</span></a>
+					</p>
+					<p>
+						© All Rights Reserved. Designed by <a href="http://www.showu.com.tw/" target="_blank" class="mgr1">碩遠科技</a>網頁設計
+					</p>
+				</section>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- 註冊登入模態框 -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div style="text-align: center">
+						<h4 class="modal-title" id="myModalLabel">線上預約登入</h4>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div style="text-align: center">
+						<a href="order.html"><img src="images/fblogin.jpg" alt=""></a>
+						<p>或</p>
+					</div>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">帳號</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="電子郵件">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">密碼</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="密碼">
+						</div>
+						<div style="text-align: center">
+							<a href="order.html" type="button" class="btn btn-primary btn-lg" style="padding: 10px 80px">登入</a>
+						</div>
+					</form>
+					<br/>
+					<div style="text-align: center">
+						<p><a href="forget.html">忘記密碼</a>&nbsp;&nbsp;&frasl;&nbsp;&nbsp;<a href="register.html">按此註冊</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="js/bootstrap.min.js"></script>
+	<!--加載wow.js-->
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</body>
+</html>

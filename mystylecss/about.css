@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* CSS Document */
+.pagebanner { /*banner背景圖片*/
+	background-image:url(../images/index/located2.jpg);
+}
+.bannerhead { /*banner標題字顏色*/
+	color: white;
+}
+.bgarticle1 { /*第1區塊背景底色與文字樣式*/
+	background-color: violet;
+	border-bottom-right-radius: 100px;
+	font-size: 16px;
+}
+.bgarticle1 section{ /*第1區塊文字上間距*/
+	padding-top: 50px;
+}
+.bgarticle1 section p{ /*第1區塊文字顏色*/
+	color: white;
+}
+#about-article1 figure img { /*第1區塊圖片大小*/
+	width: 100%;
+}
+#about-article1 figure.col-sm-6 { /*第1區塊圖片左右內距縮0*/
+	padding: 0px;
+}
+.serviceidea .glyphicon {
+	font-size: 50px;
+	color: mediumorchid;
+}
+@media (max-width:991px) and (min-width:768px){
+	.bgarticle1 section { /*第1區塊文字上下間距*/
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}
+@media (max-width:767px){
+	#about-article1 figure.col-sm-6 { /*第1區塊圖片左右內距縮恢復15px*/
+		padding: 15px;
+	}
+	.bgarticle1 section { /*第1區塊文字上下間距*/
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+}

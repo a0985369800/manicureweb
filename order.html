@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>Bootstrap-Material DateTimePicker</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css"/>
+
+<link rel="stylesheet" href="./css/bootstrap-material-datetimepicker.css" />
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--animate.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<!--全局css-->
+<link href="mystylecss/all.css" rel="stylesheet" type="text/css">
+<!--本頁css-->
+<link href="mystylecss/order.css" rel="stylesheet" type="text/css">
+
+	
+<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/ripples.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/js/material.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/FezVrasta/bootstrap-material-design/master/dist/js/material.min.js"></script>
+<script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap-material-datetimepicker.js"></script>
+
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})
+</script>
+
+</head>
+<body>
+<nav class="navbar navbar-mistyrose navbar-fixed-top" role="navigation">
+	<div class="container"> 
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+				<span class="sr-only"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="美甲美睫"></a>
+		</div>
+		<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">首頁</a></li>
+				<li><a href="service.html">服務項目</a></li>
+				<li><a href="work.html">作品集</a></li>
+				<li><a href="news.html">最新消息</a></li>
+				<li><a href="about.html">關於我們</a></li>
+				<li><a href="order.html" data-toggle="modal" data-target="#myModal">線上預約</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<main class="mainmargintop">
+	<div class="pagebanner mgb2">
+		<h1 class="bannerhead wow fadeInRight">線上預約</h1>
+	</div>
+	<div class="container well">
+		<h2>預約請填寫下方資料</h2>
+	</div>
+	<div class="container well">
+		<form>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="exampleInputName2">預約姓名</label>
+						<input type="text" class="form-control" id="exampleInputName" placeholder="填寫本名">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="exampleInputEmail2">您的電話</label>
+						<input type="phone" class="form-control" id="exampleInputPhone" placeholder="電話號碼">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="exampleInputEmail2">您的信箱</label>
+						<input type="email" class="form-control" id="exampleInputEmail" placeholder="電子信箱">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>請選擇預約日期</h2>
+					<div class="form-control-wrapper">
+						<input type="text" id="date" class="form-control" placeholder="點擊此處選擇日期">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2>請選擇預約時間</h2>
+					<div class="form-control-wrapper">
+						<input type="text" id="time" class="form-control" placeholder="點擊此處選擇時間">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text-right form-control-wrapper">
+						<button type="reset" class="btn btn-warning" data-dismiss="modal">清除</button>
+						<button type="submit" class="btn btn-primary">確認送出</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</main>	
+<script type="text/javascript">
+$(document).ready(function()
+{
+	$('#date').bootstrapMaterialDatePicker
+	({
+		time: false,
+		clearButton: true
+	});
+
+	$('#time').bootstrapMaterialDatePicker
+	({
+		date: false,
+		shortTime: false,
+		format: 'HH:mm'
+	});
+
+	$('#date-format').bootstrapMaterialDatePicker
+	({
+		format: 'dddd DD MMMM YYYY - HH:mm'
+	});
+	$('#date-fr').bootstrapMaterialDatePicker
+	({
+		format: 'DD/MM/YYYY HH:mm',
+		lang: 'fr',
+		weekStart: 1, 
+		cancelText : 'ANNULER',
+		nowButton : true,
+		switchOnClick : true
+	});
+
+	$('#date-end').bootstrapMaterialDatePicker
+	({
+		weekStart: 0, format: 'DD/MM/YYYY HH:mm'
+	});
+	$('#date-start').bootstrapMaterialDatePicker
+	({
+		weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime : true
+	}).on('change', function(e, date)
+	{
+		$('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
+	});
+
+	$('#min-date').bootstrapMaterialDatePicker({ format : 'DD/MM/YYYY HH:mm', minDate : new Date() });
+
+	$.material.init()
+});
+</script>
+<!--加載wow.js-->
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</body>
+</html>
